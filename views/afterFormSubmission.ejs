@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Response</title>
+    <link rel="stylesheet" href="/stylesheets/datepicker.css" />
+</head>
+
+<body>
+    <h2>You successfully posted information to a web server</h2>
+
+    <h3>The server: <%=response.url%></h3>
+    <h4>The information: <%=JSON.stringify(response.json)%> </h4>
+</body>
+
+</html>
