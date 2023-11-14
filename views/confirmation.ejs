@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Intake Form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            position: relative;
+            width: 100%;
+        }
+
+        .banner {
+            background-color: #4285cb;
+            height: 10px;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px;
+            width: 220px;
+            position: absolute;
+            height: 1150px;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1d2124;
+        }
+
+        section {
+            margin-left: 240px;
+            padding: 20px;
+            height: 100%;
+            margin-bottom: auto;
+            /* Added margin-bottom for better spacing */
+        }
+
+        form {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        label {
+            margin-top: 15px;
+            display: block;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 15px;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 5px; /* Add margin-left to provide padding for checkboxes */
+        }
+
+        input,
+        select,
+        checkbox {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 2px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            /* Added margin-top for better spacing */
+        }
+
+        .button-container button {
+            padding: 12px;
+            width: 48%;
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button.submit {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .button-container button.cancel {
+            background-color: #6c757d;
+            color: #ffffff;
+        }
+
+        .thin-banner {
+            background-color: #007bff;
+            height: 2px;
+            margin-top: -2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Confirmation Page
+    </header>
+
+    <div class="banner"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#confirmation"><i class="uil uil-align-left"></i> Confirmation</a></li>
+        </ul>
+        <div class="thin-banner"></div>
+    </nav>
+
+    <section>
+        <p></p>
+
+        <h3>You will receive an email regarding the status of your data request. </h3>
+
+    </section>
+
+</body>
+
+</html>
