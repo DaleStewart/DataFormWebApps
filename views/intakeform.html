@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Dale's Form</title>
-    <link rel="stylesheet" href="/stylesheets/datepicker.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Intake Form</title>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -143,7 +144,9 @@
 
   <body>
     <header>Data Intake Form</header>
+
     <div class="banner"></div>
+
     <nav>
       <ul>
         <li>
@@ -169,7 +172,7 @@
     </nav>
 
     <section>
-      <form name="newConnectionForm" class="mt-3" method="POST" action="/ibm">
+      <form>
         <!--make this sql injection proof-->
         <label for="data-set-name">Name of dataset:</label>
         <input
@@ -432,11 +435,11 @@
           </div>
         </div>
         <!--what should happen when you hit submit?-->
-        <button type="submit" class="button-container submit">
-          Create Connection
-        </button>
       </form>
+      <div class="button-container">
+        <button type="submit" class="submit">Submit</button>
+        <button type="button" class="cancel">Cancel</button>
+      </div>
     </section>
-    <%- include ('./partials/footer.ejs') %>
   </body>
 </html>
